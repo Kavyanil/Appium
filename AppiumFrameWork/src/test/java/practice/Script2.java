@@ -27,9 +27,9 @@ public class Script2 {
 	URL url = new URL("http://localhost:4723/wd/hub");//same
 	AndroidDriver driver = new AndroidDriver(url, dc);
 	MobileElement continuebutton = (MobileElement) driver.findElementById("com.android.permissioncontroller:id/continue_button");
-	driver.tap(1, continuebutton, 500);
+	driver.tap(1, continuebutton,800);
 	MobileElement okbtn = (MobileElement) driver.findElementById("android:id/button1");
-	driver.tap(1, okbtn, 500);
+	driver.tap(1, okbtn, 600);
 	MobileElement views = (MobileElement) driver.findElementByAccessibilityId("Views");
 	driver.tap(1, views, 500);
 	MobileElement dragnddrop = (MobileElement) driver.findElementByAccessibilityId("Drag and Drop");
